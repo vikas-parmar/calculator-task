@@ -1,0 +1,24 @@
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.keypad button {
+  padding: 10px;
+  font-size: 1.2em;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.keypad button:hover {
+  background-color: #e0e0e0;
+}
+
+@media (max-width: 576px) {
+  .keypad {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
